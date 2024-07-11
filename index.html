@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Fontes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="shortcut icon" href="IMG/logo-chapeu-preto.png" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/style-header.css">
+    <link rel="stylesheet" href="CSS/style-main.css">
+    <title>EducAÍ</title>
+</head>
+<body>
+    <header>
+        <nav id="sidebar">
+            <div id="sidebar_content">
+                <div id="user">
+                    <img src="IMG/logo-chapeu-preto.png" alt="avatar" id="avatar">
+                    
+                    <p id="user_infos">
+                        <!--tudo que estiver dentro de item description aparecerá apenas quando o abrir a barra lateral inteira-->
+                        <span class="item-description">
+                            Google EducAÍ   
+                        </span>
+                        <span class="item-description" style="font-size: 10px;">
+                            IA para Docentes
+                        </span> 
+                    </p>
+                </div>
+                <!--Os ul serão as listas de link-->
+                <ul id="side-items">
+                    <li class="side-item active">
+                        <a href="#introductions">
+                            <i class="fa-solid fa-user" style="color: #5f6368;"></i>
+                            <span class="item-description">
+                                Introdução
+                            </span>
+                        </a>
+                    </li>
+        
+                    <li class="side-item">
+                        <a href="#depositions">
+                            <i class="fa-solid fa-bell"></i>
+                            <span class="item-description">
+                                Depoimentos
+                            </span>
+                        </a>
+                    </li>
+        
+                    <li class="side-item">
+                        <a href="#modules">
+                            <i class="fa-solid fa-gear"></i>
+                            <span class="item-description">
+                                Aulas
+                            </span>
+                        </a>
+                    </li>
+                    <li class="side-item">
+                        <a href="#prompts">
+                            <i class="fa-solid fa-gear"></i>
+                            <span class="item-description">
+                                Prompts
+                            </span>
+                        </a>
+                    </li>
+                    <li class="side-item">
+                        <a href="#about">
+                            <i class="fa-solid fa-gear"></i>
+                            <span class="item-description">
+                                Sobre nós
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+        
+                <button id="openbtn" style="justify-content: center; display: flex; align-items: center;">
+                    <i id = "open_btn_icon" class="fa-solid fa-chevron-right" style="color: #dde3ea;"></i>
+                </button>
+            </div>
+            <div id="logout">
+                <button id="logout_btn">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    <span class="item-description">
+                        Sair
+                    </span>
+                </button>
+            </div>
+        </nav>
+    </header>
+    <main>       
+        <h2 id="introductions" style="color: #5f6368;">Google EducAÍ</h2>
+        <div class="container-fluid" id="intro">
+            <div class="container-fluid" id="left-intro">
+                <h4>Revolucione a Educação com Inteligência Artificial: Um Guia Completo para Professores</h4>
+                <ul>
+                    <li>Capacitar professores de escolas públicas para utilizar a Inteligência Artificial na educação.</li>
+                    <li>Oferecer um conteúdo abrangente e fácil de entender sobre IA.</li>
+                    <li>Mostrar como a IA pode transformar positivamente o ambiente escolar.</li>
+                </ul>
+                <button id="btn-intro" type="button" class="custom-button">IA para educadores</button>
+            </div>
+            <div class="container-fluid" id="rigth-intro">
+                <video id="video-intro" height="70%" width="70%" controls>
+                    <source src="VIDEO/APRENDA TUDO SOBRE MEDIA QUERY - COMO DEIXAR UM SITE RESPONSIVO.mp4" type="video/mp4">
+                </video>      
+            </div>
+        </div>
+        <div id="depositions">
+            <h4>Depoimentos</h4>
+            <div id="cards-depositions">
+                <div class="card-depositions" style="width: 18rem;">
+                    <img id="img-depositions" src="IMG/Grazi.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <h5 class="card-title">Giovanna Nakamae</h5>
+                    <p class="card-text"><p><i>“Naturalmente a falta de apoio financeiro faz com que o professor tenha que duplicar a jornada. Com isso, sobra pouco tempo para preparação das aulas. Acrescenta a isso o baixo estimulo por parte dos alunos.”</i></p>
+                    </div>
+                </div>
+                <div class="card-depositions" style="width: 18rem;">
+                    <img id="img-depositions" src="IMG/Grazi.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <h5 class="card-title">José Gaspar Bisco Junior</h5>
+                    <p class="card-text"><p><i>“Atualmente na rede pública de ensino em São Paulo, nós professores temos pouca liberdade para inovar, devido ao excesso de conteúdo a ser aplicado em um curto período de tempo e a internet lenta no ambiente escolar.”</i></p>
+                    </div>
+                </div>
+                <div class="card-depositions" style="width: 18rem;">
+                    <img id="img-depositions" src="IMG/Grazi.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <h5 class="card-title">Erica Marins</h5>
+                    <p class="card-text"><p><i>“A falta de infraestrutura é um dos maiores obstáculos que enfrento como professor em periferia enfrento, já que dificulta o acesso às plataformas governamentais para ministrar as aulas e, consequentemente, otimizar o tempo de produtividade em sala.”</i></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="modules">
+            <h4>Guia rápido de IA</h4>
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item" >
+                    <h2 class="accordion-header">
+                        <button class="accordion-button"  type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                            Perca o medo das IAs
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                        <div class="accordion-body">
+                            <div class="container-fluid" id="module">
+                                <div class="container-fluid" id="left-1">
+                                    <h5>Perca o medo das IAs</h5>
+                                    <p>Explorar e como a IA personaliza o aprendizado, automatiza tarefas administrativas e fornece recursos educativos avançados. Destacaremos que a IA é uma aliada dos professores, melhorando a eficiência sem substituir o toque humano, a empatia e a experiência docente.</p>
+                                </div>
+                                <div class="container-fluid" id="right-1">
+                                    <video id="video-module" controls>
+                                        <source src="VIDEO/APRENDA TUDO SOBRE MEDIA QUERY - COMO DEIXAR UM SITE RESPONSIVO.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                            Benefícios e limitações da IA na educação
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" >
+                        <div class="accordion-body">
+                            <div class="container-fluid" id="module">
+                                <div class="container-fluid" id="right-1">
+                                    <video id="video-module" controls>
+                                        <source src="VIDEO/APRENDA TUDO SOBRE MEDIA QUERY - COMO DEIXAR UM SITE RESPONSIVO.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                                <div class="container-fluid" id="left-1">                           
+                                    <h5>Benefícios e limitações da IA na educação</h5>
+                                    <p>Entenda como a IA personaliza o aprendizado, automatiza tarefas e fornece recursos avançados, melhorando a eficiência sem substituir o toque humano e a experiência dos professores.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                            Otimize suas aulas com IA
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            <div class="container-fluid" id="module">
+                                <div class="container-fluid" id="left-1">
+                                    <h5>Otimize suas aulas com IA</h5>
+                                    <p>Veja um pouco sobre como usar as IAs para produzir planos de aula rapidamente e explore ferramentas como Kahoot e Quizlet para aumentar o engajamento dos alunos com quizzes interativos e flashcards.</p>
+                                </div>
+                                <div class="container-fluid" id="right-1">
+                                    <video id="video-module" controls>
+                                        <source src="VIDEO/APRENDA TUDO SOBRE MEDIA QUERY - COMO DEIXAR UM SITE RESPONSIVO.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="prompts">
+            <div class="container">
+              <div class="alert alert-primary" role="alert">
+                  Situação: Você está com pouco tempo na semana e precisa fazer uma prova para seus alunos sobre 'Mudanças Climáticas'. Como você pode utilizar o Gemini para te ajudar?
+              </div>
+              <div style="align-items: center; display: flex;justify-content: center;">
+                  <button id="btnPromptChanger" type="button" class="custom-button">Gerar exemplo de PROMPT</button>
+              </div>
+              <hr class="solid">
+              <div class="row m-3">
+                  <div class="col-1">
+                      <div>
+                          <img src="IMG/avatar.png" alt="Avatar" class="avatar">
+                      </div>
+                  </div>
+                  <div id="changeablePrompt" class="col align-content-center">
+                      <p></p>
+                  </div>
+              </div>
+              <hr class="solid">
+              <div class="row m-3">
+                  
+                  <div class="col-1">
+                      <div>
+                          <img src="IMG/gemini.png" alt="Avatar" class="avatar">
+                      </div>
+                  </div>
+                  <div id="changeableAnswer" class="col">
+                </div>
+              </div>
+              <div class="container-fluid" style="background-color: #fafafa;">
+                <div class="row d-flex align-items-center">
+                    <div class="col-sm-6 p-3">
+                        <h5 class="card-title text-center mb-2">Contexto</h5>
+                        <h6 id="scoreContexto" class="card-subtitle mb-2 text-muted text-center">-</h6>
+                        <p id="notesContexto" class="card-text text-center">-</p>
+                    </div>
+                    <div class="col-sm-6 p-3">
+                        <h5 class="card-title text-center mb-2">Modelo</h5>
+                        <h6 id="scoreModelo" class="card-subtitle mb-2 text-muted text-center">-</h6>
+                        <p id="notesModelo" class="card-text text-center">-</p>
+                    </div>
+                </div>
+                <div class="row d-flex align-items-center">
+                    <div class="col-sm-6 p-3">
+                        <h5 class="card-title text-center mb-2">Comando</h5>
+                        <h6 id="scoreComando" class="card-subtitle mb-2 text-muted text-center">-</h6>
+                        <p id="notesComando" class="card-text text-center">-</p>
+                    </div>
+                    <div class="col-sm-6 p-3">
+                        <h5 class="card-title text-center mb-2">Conteúdo</h5>
+                        <h6 id="scoreConteudo" class="card-subtitle mb-2 text-muted text-center">-</h6>
+                        <p id="notesConteudo" class="card-text text-center">-</p>
+                    </div>
+                </div>
+            </div> 
+            <div class="pt-3" style="align-items: center; display: flex;justify-content: center;">
+                <button type="button" class="btn btn-outline-danger">Quero melhorar minha PROMPTS</button>
+            </div>    
+        </div>
+    </main>
+    <script src="JS/javascript.js"></script>  
+</body>
+</html>
