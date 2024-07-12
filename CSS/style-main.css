@@ -81,11 +81,21 @@ body{
     border-left: solid rgb(255, 62, 48) 10px;
     padding: 30px;
 }
+#about{
+    border-left: solid #dde3ea 10px; 
+    background-color: rgb(255, 255, 255);
+    padding: 30px;
+}
 #cta{
     border-radius: 10px;
 }
 #cta p{
     color: gainsboro;
+}
+#img-group{
+    width: 90%; 
+    height: 90%;
+    border-radius: 15px;
 }
 #img-depositions {
     border-radius: 50%;
