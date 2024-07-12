@@ -22,21 +22,6 @@ body{
     border-color: blue; /* Borda azul ao passar o mouse */
     border-radius: 7px;
 }
-#btn-modules {
-    background-color: rgb(247, 181, 41); /* Cor de fundo inicial */
-    color: white; /* Cor do texto inicial */
-    border: 1px solid rgb(247, 181, 41); /* Borda inicial */
-    padding: 10px 20px;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Transições suaves */
-    border-radius: 7px;
-}
-#btn-modules:hover {
-    background-color: transparent; /* Fundo transparente ao passar o mouse */
-    color: rgb(247, 181, 41); /* Texto azul ao passar o mouse */
-    border-color: rgb(247, 181, 41); /* Borda azul ao passar o mouse */
-    border-radius: 7px;
-}
 #btnPromptChanger {
     background-color: rgb(255, 62, 48); /* Cor de fundo inicial */
     color: white; /* Cor do texto inicial */
@@ -176,4 +161,16 @@ hr.solid {
         width: 18rem;
         margin: 15px;
     }
+}
+#div-oculta{
+    visibility: hidden;
+    display: none;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #f7b62946;
+}
+
+.accordion-button {
+    background-color: white;
 }

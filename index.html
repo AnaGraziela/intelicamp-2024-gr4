@@ -104,7 +104,7 @@
                     <li>Oferecer um conteúdo abrangente e fácil de entender sobre IA.</li>
                     <li>Mostrar como a IA pode transformar positivamente o ambiente escolar.</li>
                 </ul>
-                <a href="https://materiais.ipnet.cloud/google-for-education-preco?utm_medium=cpc&utm_source=google-search&utm_campaign=[Cadastro]_Google_4_Education_-_Fundo_Brasil&utm_source=google-search&utm_medium=cpc&utm_campaign=[Cadastro]_Google_4_Education_-_Fundo_Brasil&utm_id=17140253255&utm_term=141366874041&utm_content=google%20for%20education&gad_source=1&gclid=CjwKCAjwqMO0BhA8EiwAFTLgIMtwbdt1hdd-9IfhB38Eczz-J_3bIrYM3Cai6j2q4xgVzVq_9eWygRoC6woQAvD_BwE"></a><button id="btn-intro" type="button" class="custom-button">IA para educadores</button></a>
+                <a id="btn-intro" type="button" class="custom-button" type="button" href="https://grow.google/ai-for-educators/" target="_blank">IA para educadores</a>
             </div>
             <div class="container-fluid" id="rigth-intro">
                 <video id="video-intro" height="70%" width="70%" controls>
@@ -215,69 +215,66 @@
                     </div>
                 </div>
             </div>
-            <div style="padding-top: 20px;">
-                <a href="https://materiais.ipnet.cloud/google-for-education-preco?utm_medium=cpc&utm_source=google-search&utm_campaign=[Cadastro]_Google_4_Education_-_Fundo_Brasil&utm_source=google-search&utm_medium=cpc&utm_campaign=[Cadastro]_Google_4_Education_-_Fundo_Brasil&utm_id=17140253255&utm_term=141366874041&utm_content=google%20for%20education&gad_source=1&gclid=CjwKCAjwqMO0BhA8EiwAFTLgIMtwbdt1hdd-9IfhB38Eczz-J_3bIrYM3Cai6j2q4xgVzVq_9eWygRoC6woQAvD_BwE"><button id="btn-modules" type="button" class="custom-button">Ir para o curso</button></a>
-            </div>
         </div>
         <div id="prompts">
             <div class="container">
-                <div class="alert alert-primary" role="alert">
+                <div class="alert alert-primary" id="background-alert" role="alert">
                   Situação: Você está com pouco tempo na semana e precisa fazer uma prova para seus alunos sobre 'Mudanças Climáticas'. Como você pode utilizar o Gemini para te ajudar?
                 </div>
                 <div style="align-items: center; display: flex;justify-content: center;">
-                   <button id="btnPromptChanger" type="button" class="custom-button">Gerar exemplo de PROMPT</button>
+                    <button id="btnPromptChanger" type="button" class="custom-button">Gerar exemplo de <b>prompt</b></button>
                 </div>
-                <hr class="solid">
-                <div class="row m-3">
-                    <div class="col-1">
-                        <div>
-                          <img src="IMG/avatar.png" alt="Avatar" class="avatar">
+                <div id="div-oculta">
+                    <hr class="solid">
+                    <div class="row m-3">
+                        <div class="col-1">
+                            <div>
+                            <img src="IMG/avatar.png" alt="Avatar" class="avatar">
+                            </div>
+                        </div>
+                        <div id="changeablePrompt" class="col align-content-center">
+                            <p></p>
                         </div>
                     </div>
-                    <div id="changeablePrompt" class="col align-content-center">
-                        <p></p>
+                    <hr class="solid">
+                    <div class="row m-3">
+                        <div class="col-1">
+                            <div>
+                            <img src="IMG/gemini.png" alt="Avatar" class="avatar">
+                            </div>
+                        </div>
+                        <div id="changeableAnswer" class="col"></div>
                     </div>
-                </div>
-                <hr class="solid">
-                <div class="row m-3">
-                    <div class="col-1">
-                        <div>
-                          <img src="IMG/gemini.png" alt="Avatar" class="avatar">
+                    <div class="container-fluid" style="background-color: #fafafa;">
+                        <div class="row d-flex align-items-center">
+                            <div class="col-sm-6 p-3">
+                                <h5 class="card-title text-center mb-2">Contexto</h5>
+                                <h6 id="scoreContexto" class="card-subtitle mb-2 text-muted text-center">-</h6>
+                                <p id="notesContexto" class="card-text text-center">-</p>
+                            </div>
+                            <div class="col-sm-6 p-3">
+                                <h5 class="card-title text-center mb-2">Modelo</h5>
+                                <h6 id="scoreModelo" class="card-subtitle mb-2 text-muted text-center">-</h6>
+                                <p id="notesModelo" class="card-text text-center">-</p>
+                            </div>
                         </div>
-                    </div>
-                    <div id="changeableAnswer" class="col"></div>
-                </div>
-                <div class="container-fluid" style="background-color: #fafafa;">
-                    <div class="row d-flex align-items-center">
-                        <div class="col-sm-6 p-3">
-                            <h5 class="card-title text-center mb-2">Contexto</h5>
-                            <h6 id="scoreContexto" class="card-subtitle mb-2 text-muted text-center">-</h6>
-                            <p id="notesContexto" class="card-text text-center">-</p>
+                        <div class="row d-flex align-items-center">
+                            <div class="col-sm-6 p-3">
+                                <h5 class="card-title text-center mb-2">Comando</h5>
+                                <h6 id="scoreComando" class="card-subtitle mb-2 text-muted text-center">-</h6>
+                                <p id="notesComando" class="card-text text-center">-</p>
+                            </div>
+                            <div class="col-sm-6 p-3">
+                                <h5 class="card-title text-center mb-2">Conteúdo</h5>
+                                <h6 id="scoreConteudo" class="card-subtitle mb-2 text-muted text-center">-</h6>
+                                <p id="notesConteudo" class="card-text text-center">-</p>
+                            </div>
                         </div>
-                        <div class="col-sm-6 p-3">
-                            <h5 class="card-title text-center mb-2">Modelo</h5>
-                            <h6 id="scoreModelo" class="card-subtitle mb-2 text-muted text-center">-</h6>
-                            <p id="notesModelo" class="card-text text-center">-</p>
-                        </div>
-                    </div>
-                    <div class="row d-flex align-items-center">
-                        <div class="col-sm-6 p-3">
-                            <h5 class="card-title text-center mb-2">Comando</h5>
-                            <h6 id="scoreComando" class="card-subtitle mb-2 text-muted text-center">-</h6>
-                            <p id="notesComando" class="card-text text-center">-</p>
-                        </div>
-                        <div class="col-sm-6 p-3">
-                            <h5 class="card-title text-center mb-2">Conteúdo</h5>
-                            <h6 id="scoreConteudo" class="card-subtitle mb-2 text-muted text-center">-</h6>
-                            <p id="notesConteudo" class="card-text text-center">-</p>
-                        </div>
-                    </div>
-                </div> 
-                <a href="https://grow.google/ai-for-educators/">
+                    </div> 
                     <div class="pt-3" style="align-items: center; display: flex;justify-content: center;">
-                        <button type="button" class="btn btn-outline-danger">Quero melhorar minha PROMPTS</button>
+                        <a type="button" href="https://grow.google/ai-for-educators/" class="btn btn-outline-danger" target="_blank">Quero melhorar meus <b>prompts</b></a>
                     </div>    
-                </a>
+                </div>
             </div>
         </div>
         </div>
