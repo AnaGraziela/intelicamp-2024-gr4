@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -61,7 +62,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #0a0a0a;
+    color: #5f6368;
 }
 .side-item.active a {
     color: #e3e9f7;
@@ -132,4 +133,14 @@
 #sidebar ul {
     list-style-type: none; 
     padding-left: 0; 
+}
+
+.fa-right-from-bracket {
+    color: #5f6368;
+}
+
+#background-alert {
+    background-color: #dde3ea;
+    color: #5f6368;
+    border: none;
 }
