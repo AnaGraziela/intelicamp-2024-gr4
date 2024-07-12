@@ -224,55 +224,57 @@
                 <div style="align-items: center; display: flex;justify-content: center;">
                    <button id="btnPromptChanger" type="button" class="custom-button">Gerar exemplo de PROMPT</button>
                 </div>
-                <hr class="solid">
-                <div class="row m-3">
-                    <div class="col-1">
-                        <div>
-                          <img src="IMG/avatar.png" alt="Avatar" class="avatar">
+                <div id="div-oculta">
+                    <hr class="solid">
+                    <div class="row m-3">
+                        <div class="col-1">
+                            <div>
+                            <img src="IMG/avatar.png" alt="Avatar" class="avatar">
+                            </div>
+                        </div>
+                        <div id="changeablePrompt" class="col align-content-center">
+                            <p></p>
                         </div>
                     </div>
-                    <div id="changeablePrompt" class="col align-content-center">
-                        <p></p>
+                    <hr class="solid">
+                    <div class="row m-3">
+                        <div class="col-1">
+                            <div>
+                            <img src="IMG/gemini.png" alt="Avatar" class="avatar">
+                            </div>
+                        </div>
+                        <div id="changeableAnswer" class="col"></div>
                     </div>
+                    <div class="container-fluid" style="background-color: #fafafa;">
+                        <div class="row d-flex align-items-center">
+                            <div class="col-sm-6 p-3">
+                                <h5 class="card-title text-center mb-2">Contexto</h5>
+                                <h6 id="scoreContexto" class="card-subtitle mb-2 text-muted text-center">-</h6>
+                                <p id="notesContexto" class="card-text text-center">-</p>
+                            </div>
+                            <div class="col-sm-6 p-3">
+                                <h5 class="card-title text-center mb-2">Modelo</h5>
+                                <h6 id="scoreModelo" class="card-subtitle mb-2 text-muted text-center">-</h6>
+                                <p id="notesModelo" class="card-text text-center">-</p>
+                            </div>
+                        </div>
+                        <div class="row d-flex align-items-center">
+                            <div class="col-sm-6 p-3">
+                                <h5 class="card-title text-center mb-2">Comando</h5>
+                                <h6 id="scoreComando" class="card-subtitle mb-2 text-muted text-center">-</h6>
+                                <p id="notesComando" class="card-text text-center">-</p>
+                            </div>
+                            <div class="col-sm-6 p-3">
+                                <h5 class="card-title text-center mb-2">Conteúdo</h5>
+                                <h6 id="scoreConteudo" class="card-subtitle mb-2 text-muted text-center">-</h6>
+                                <p id="notesConteudo" class="card-text text-center">-</p>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="pt-3" style="align-items: center; display: flex;justify-content: center;">
+                        <button type="button" class="btn btn-outline-danger">Quero melhorar minha PROMPTS</button>
+                    </div>    
                 </div>
-                <hr class="solid">
-                <div class="row m-3">
-                    <div class="col-1">
-                        <div>
-                          <img src="IMG/gemini.png" alt="Avatar" class="avatar">
-                        </div>
-                    </div>
-                    <div id="changeableAnswer" class="col"></div>
-                </div>
-                <div class="container-fluid" style="background-color: #fafafa;">
-                    <div class="row d-flex align-items-center">
-                        <div class="col-sm-6 p-3">
-                            <h5 class="card-title text-center mb-2">Contexto</h5>
-                            <h6 id="scoreContexto" class="card-subtitle mb-2 text-muted text-center">-</h6>
-                            <p id="notesContexto" class="card-text text-center">-</p>
-                        </div>
-                        <div class="col-sm-6 p-3">
-                            <h5 class="card-title text-center mb-2">Modelo</h5>
-                            <h6 id="scoreModelo" class="card-subtitle mb-2 text-muted text-center">-</h6>
-                            <p id="notesModelo" class="card-text text-center">-</p>
-                        </div>
-                    </div>
-                    <div class="row d-flex align-items-center">
-                        <div class="col-sm-6 p-3">
-                            <h5 class="card-title text-center mb-2">Comando</h5>
-                            <h6 id="scoreComando" class="card-subtitle mb-2 text-muted text-center">-</h6>
-                            <p id="notesComando" class="card-text text-center">-</p>
-                        </div>
-                        <div class="col-sm-6 p-3">
-                            <h5 class="card-title text-center mb-2">Conteúdo</h5>
-                            <h6 id="scoreConteudo" class="card-subtitle mb-2 text-muted text-center">-</h6>
-                            <p id="notesConteudo" class="card-text text-center">-</p>
-                        </div>
-                    </div>
-                </div> 
-                <div class="pt-3" style="align-items: center; display: flex;justify-content: center;">
-                    <button type="button" class="btn btn-outline-danger">Quero melhorar minha PROMPTS</button>
-                </div>    
             </div>
         </div>
         <div id="cta" class="container m-5 p-5 d-block mx-auto bg-primary">

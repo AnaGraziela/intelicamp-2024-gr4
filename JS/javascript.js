@@ -58,6 +58,8 @@ function ChangeAllTexts(pL, tI, gL, mD, cI){
       const myDiv = document.getElementById("changeableAnswer");
 
        $("#btnPromptChanger").click(function() {
+          // Change visibility
+          $("#div-oculta").css({"visibility": "visible", "display":"block"});
           // Check if textIndex is within the list bounds
           if (textIndex < promptList.length) {
             ChangeAllTexts(promptList, textIndex, geminiList, myDiv, cardInfo);

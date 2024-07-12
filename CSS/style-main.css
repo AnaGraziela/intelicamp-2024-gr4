@@ -162,3 +162,7 @@ hr.solid {
         margin: 15px;
     }
 }
+#div-oculta{
+    visibility: hidden;
+    display: none;
+}
