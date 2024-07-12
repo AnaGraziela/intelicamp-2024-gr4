@@ -40,25 +40,23 @@
                 <ul id="side-items">
                     <li class="side-item active">
                         <a href="#introductions">
-                            <i class="fa-solid fa-user" style="color: #5f6368;"></i>
+                            <i class="fa-solid fas fa-star" style="color: #5f6368;"></i>
                             <span class="item-description">
                                 Introdução
                             </span>
                         </a>
                     </li>
-        
                     <li class="side-item">
                         <a href="#depositions">
-                            <i class="fa-solid fa-bell"></i>
+                            <i class="fa-solid fas fa-comments"></i>
                             <span class="item-description">
                                 Depoimentos
                             </span>
                         </a>
                     </li>
-        
                     <li class="side-item">
                         <a href="#modules">
-                            <i class="fa-solid fa-gear"></i>
+                            <i class="fa-solid fab fa-youtube"></i>
                             <span class="item-description">
                                 Aulas
                             </span>
@@ -66,7 +64,7 @@
                     </li>
                     <li class="side-item">
                         <a href="#prompts">
-                            <i class="fa-solid fa-gear"></i>
+                            <i class="fa-solid fas fa-file-alt"></i>
                             <span class="item-description">
                                 Prompts
                             </span>
@@ -74,7 +72,7 @@
                     </li>
                     <li class="side-item">
                         <a href="#about">
-                            <i class="fa-solid fa-gear"></i>
+                            <i class="fa-solid">&#9829;</i>
                             <span class="item-description">
                                 Sobre nós
                             </span>
@@ -118,24 +116,31 @@
             <h4>Depoimentos</h4>
             <div id="cards-depositions">
                 <div class="card-depositions" style="width: 18rem;">
-                    <img id="img-depositions" src="IMG/Grazi.png" class="card-img-top" alt="...">
+                    <div style="align-items: center; justify-content: center; display: flex;">
+                        <img id="img-depositions" src="IMG/giovanna.jpeg" class="card-img-top" alt="img Giovanna">
+                    </div>
                     <div class="card-body">
-                    <h5 class="card-title">Giovanna Nakamae</h5>
-                    <p class="card-text"><p><i>“Naturalmente a falta de apoio financeiro faz com que o professor tenha que duplicar a jornada. Com isso, sobra pouco tempo para preparação das aulas. Acrescenta a isso o baixo estimulo por parte dos alunos.”</i></p>
+                        <h5 class="card-title">Giovanna Nakamae</h5>
+                        <p class="card-text"><p><i>“Naturalmente a falta de apoio financeiro faz com que o professor tenha que duplicar a jornada. Com isso, sobra pouco tempo para preparação das aulas. Acrescenta a isso o baixo estimulo por parte dos alunos.”</i></p>
+                    </div>
+
+                </div>
+                <div class="card-depositions" style="width: 18rem;">
+                    <div style="align-items: center; justify-content: center; display: flex;">
+                        <img id="img-depositions" src="IMG/jose.jpeg" class="card-img-top" alt="img Jose">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">José Gaspar Bisco Junior</h5>
+                        <p class="card-text"><p><i>“Atualmente na rede pública de ensino em São Paulo, nós professores temos pouca liberdade para inovar, devido ao excesso de conteúdo a ser aplicado em um curto período de tempo e a internet lenta no ambiente escolar.”</i></p>
                     </div>
                 </div>
                 <div class="card-depositions" style="width: 18rem;">
-                    <img id="img-depositions" src="IMG/Grazi.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                    <h5 class="card-title">José Gaspar Bisco Junior</h5>
-                    <p class="card-text"><p><i>“Atualmente na rede pública de ensino em São Paulo, nós professores temos pouca liberdade para inovar, devido ao excesso de conteúdo a ser aplicado em um curto período de tempo e a internet lenta no ambiente escolar.”</i></p>
+                    <div style="align-items: center; justify-content: center; display: flex;">
+                        <img id="img-depositions" src="IMG/erica.jpeg" class="card-img-top" alt="img Erica">
                     </div>
-                </div>
-                <div class="card-depositions" style="width: 18rem;">
-                    <img id="img-depositions" src="IMG/Grazi.png" class="card-img-top" alt="...">
                     <div class="card-body">
-                    <h5 class="card-title">Erica Marins</h5>
-                    <p class="card-text"><p><i>“A falta de infraestrutura é um dos maiores obstáculos que enfrento como professor em periferia enfrento, já que dificulta o acesso às plataformas governamentais para ministrar as aulas e, consequentemente, otimizar o tempo de produtividade em sala.”</i></p>
+                        <h5 class="card-title">Erica Marins</h5>
+                        <p class="card-text"><p><i>“A falta de infraestrutura é um dos maiores obstáculos que enfrento como professor em periferia enfrento, já que dificulta o acesso às plataformas governamentais para ministrar as aulas e, consequentemente, otimizar o tempo de produtividade em sala.”</i></p>
                     </div>
                 </div>
             </div>
@@ -238,38 +243,59 @@
                           <img src="IMG/gemini.png" alt="Avatar" class="avatar">
                       </div>
                   </div>
-                  <div id="changeableAnswer" class="col">
                 </div>
-              </div>
-              <div class="container-fluid" style="background-color: #fafafa;">
-                <div class="row d-flex align-items-center">
-                    <div class="col-sm-6 p-3">
-                        <h5 class="card-title text-center mb-2">Contexto</h5>
-                        <h6 id="scoreContexto" class="card-subtitle mb-2 text-muted text-center">-</h6>
-                        <p id="notesContexto" class="card-text text-center">-</p>
+                <div class="container-fluid" style="background-color: #fafafa;">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-sm-6 p-3">
+                            <h5 class="card-title text-center mb-2">Contexto</h5>
+                            <h6 id="scoreContexto" class="card-subtitle mb-2 text-muted text-center">-</h6>
+                            <p id="notesContexto" class="card-text text-center">-</p>
+                        </div>
+                        <div class="col-sm-6 p-3">
+                            <h5 class="card-title text-center mb-2">Modelo</h5>
+                            <h6 id="scoreModelo" class="card-subtitle mb-2 text-muted text-center">-</h6>
+                            <p id="notesModelo" class="card-text text-center">-</p>
+                        </div>
                     </div>
-                    <div class="col-sm-6 p-3">
-                        <h5 class="card-title text-center mb-2">Modelo</h5>
-                        <h6 id="scoreModelo" class="card-subtitle mb-2 text-muted text-center">-</h6>
-                        <p id="notesModelo" class="card-text text-center">-</p>
+                    <div class="row d-flex align-items-center">
+                        <div class="col-sm-6 p-3">
+                            <h5 class="card-title text-center mb-2">Comando</h5>
+                            <h6 id="scoreComando" class="card-subtitle mb-2 text-muted text-center">-</h6>
+                            <p id="notesComando" class="card-text text-center">-</p>
+                        </div>
+                        <div class="col-sm-6 p-3">
+                            <h5 class="card-title text-center mb-2">Conteúdo</h5>
+                            <h6 id="scoreConteudo" class="card-subtitle mb-2 text-muted text-center">-</h6>
+                            <p id="notesConteudo" class="card-text text-center">-</p>
+                        </div>
                     </div>
-                </div>
-                <div class="row d-flex align-items-center">
-                    <div class="col-sm-6 p-3">
-                        <h5 class="card-title text-center mb-2">Comando</h5>
-                        <h6 id="scoreComando" class="card-subtitle mb-2 text-muted text-center">-</h6>
-                        <p id="notesComando" class="card-text text-center">-</p>
-                    </div>
-                    <div class="col-sm-6 p-3">
-                        <h5 class="card-title text-center mb-2">Conteúdo</h5>
-                        <h6 id="scoreConteudo" class="card-subtitle mb-2 text-muted text-center">-</h6>
-                        <p id="notesConteudo" class="card-text text-center">-</p>
-                    </div>
-                </div>
-            </div> 
-            <div class="pt-3" style="align-items: center; display: flex;justify-content: center;">
-                <button type="button" class="btn btn-outline-danger">Quero melhorar minha PROMPTS</button>
-            </div>    
+                </div> 
+                <div class="pt-3" style="align-items: center; display: flex;justify-content: center;">
+                    <button type="button" class="btn btn-outline-danger">Quero melhorar minha PROMPTS</button>
+                </div>    
+            </div>
+        </div>
+        <div id="cta" class="container m-5 p-5 d-block mx-auto bg-primary">
+            <div class="row">
+                <p>
+                    Conclua sua jornada de descoberta com o curso 'Generative AI for Educators' da Google. Cada conteúdo que você explorou neste site foi criado utilizando ferramentas de inteligência artificial, demonstrando o poder e a versatilidade dessas tecnologias. Agora, é sua vez de mergulhar nesse universo e transformar a maneira como você ensina e aprende. Comece hoje mesmo e veja como a IA pode revolucionar a educação!
+                </p>
+            </div>
+            <div class="row">
+                <a class="btn btn-outline-light" href="#" role="button">Google x MIT Inteligência Artificial para Educadores</a>
+            </div>
+        </div>
+        <div class="container" id="footer">
+            <ul class="nav justify-content-center border-bottom pb-2 mb-3">
+                <li class="nav-item d-flex align-items-center">
+                    <a href="https://edu.google.com/intl/ALL_br/" target="_blank" class="nav-link px-2 text-muted">
+                        <img src="VIDEO/gif-google.gif" alt="Google Edu">
+                    </a>
+                    <a href="https://workspace.google.com/intl/pt-BR/terms/education_terms/" target="_blank" class="nav-link px-2 text-muted">Termos de Serviço</a>
+                    <a href="https://www.ctic.ufpa.br/publicacoes/documentos/governanca/PGWFE.pdf" target="_blank" class="nav-link px-2 text-muted">Direitos Autorais</a>
+                </li>
+            </ul>
+            <p class="text-center text-muted">© 2024 Company, EducAÍ</p>
         </div>
     </main>
     <script src="JS/javascript.js"></script>  
